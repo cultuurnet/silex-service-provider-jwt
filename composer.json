@@ -1,0 +1,33 @@
+{
+    "name": "CultuurNet/SilexServiceProviderJWT",
+    "description": "JWT authentication for Silex",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [],
+    "require": {
+        "cultuurnet/symfony-security-jwt": "~0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8",
+        "squizlabs/php_codesniffer": "~2.3",
+        "phing/phing": "~2.11",
+        "satooshi/php-coveralls": "~0.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "CultuurNet\\SilexServiceProviderJWT\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CultuurNet\\SilexServiceProviderJWT\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.x-dev"
+        }
+    }
+}
