@@ -1,5 +1,5 @@
 {
-    "name": "CultuurNet/SilexServiceProviderJWT",
+    "name": "cultuurnet/silex-service-provider-jwt",
     "description": "JWT authentication for Silex",
     "type": "library",
     "license": "Apache-2.0",

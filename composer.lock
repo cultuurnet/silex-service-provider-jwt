@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f19228d93d8356f2dc397033b34a0701",
-    "content-hash": "f92c244a3e42258bd9df5df303c5eee1",
+    "hash": "ce27961dba9af07298b4f1186bee126d",
+    "content-hash": "2175305a7089696715b044c016154273",
     "packages": [
         {
             "name": "cultuurnet/symfony-security-jwt",
