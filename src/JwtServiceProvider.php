@@ -1,9 +1,9 @@
 <?php
 
-namespace CultuurNet\SilexServiceProviderJWT;
+namespace CultuurNet\SilexServiceProviderJwt;
 
-use CultuurNet\SymfonySecurityJWT\Authentication\JWTAuthenticationProvider;
-use CultuurNet\SymfonySecurityJWT\Firewall\JWTListener;
+use CultuurNet\SymfonySecurityJwt\Authentication\JwtAuthenticationProvider;
+use CultuurNet\SymfonySecurityJwt\Firewall\JwtListener;
 use CultuurNet\UDB3\Jwt\JwtDecoderService;
 use Lcobucci\JWT\Parser;
 use Lcobucci\JWT\Signer\Key;
@@ -12,7 +12,7 @@ use Lcobucci\JWT\ValidationData;
 use Silex\Application;
 use Silex\ServiceProviderInterface;
 
-class JWTServiceProvider implements ServiceProviderInterface
+class JwtServiceProvider implements ServiceProviderInterface
 {
     /**
      * @param Application $app
@@ -74,7 +74,7 @@ class JWTServiceProvider implements ServiceProviderInterface
                 // define the authentication provider object
                 $app['security.authentication_provider.' . $name . '.jwt'] = $app->share(
                     function () use ($app, $name) {
-                        return new JWTAuthenticationProvider(
+                        return new JwtAuthenticationProvider(
                             $app['security.token_decoder.' . $name . '.jwt']
                         );
                     }
@@ -83,7 +83,7 @@ class JWTServiceProvider implements ServiceProviderInterface
                 // define the authentication listener object
                 $app['security.authentication_listener.' . $name . '.jwt'] = $app->share(
                     function () use ($app, $name) {
-                        return new JWTListener(
+                        return new JwtListener(
                             $app['security.token_storage'],
                             $app['security.authentication_manager'],
                             $app['security.token_decoder.' . $name . '.jwt']

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6a0b43c1a358a983279b3781add3e8db",
+    "hash": "a8e427ad00e5b05614dabcef71f33a8b",
     "content-hash": "146a00f615b6de664721b9a079a8173c",
     "packages": [
         {
@@ -40,12 +40,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cultuurnet/symfony-security-jwt.git",
-                "reference": "aa325c626e85c37d359c149cb4524e3f27b1ae7e"
+                "reference": "623c1ee08f6cd7841c3c2fdc89d9ae5336e30a1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cultuurnet/symfony-security-jwt/zipball/aa325c626e85c37d359c149cb4524e3f27b1ae7e",
-                "reference": "aa325c626e85c37d359c149cb4524e3f27b1ae7e",
+                "url": "https://api.github.com/repos/cultuurnet/symfony-security-jwt/zipball/623c1ee08f6cd7841c3c2fdc89d9ae5336e30a1b",
+                "reference": "623c1ee08f6cd7841c3c2fdc89d9ae5336e30a1b",
                 "shasum": ""
             },
             "require": {
@@ -66,7 +66,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "CultuurNet\\SymfonySecurityJWT\\": "src/"
+                    "CultuurNet\\SymfonySecurityJwt\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -74,7 +74,7 @@
                 "Apache-2.0"
             ],
             "description": "JWT implementation for the Symfony Security component",
-            "time": "2016-04-28 13:51:39"
+            "time": "2016-04-29 13:06:42"
         },
         {
             "name": "cultuurnet/udb3-jwt",
@@ -1344,16 +1344,16 @@
         },
         {
             "name": "symfony/security",
-            "version": "v2.7.11",
+            "version": "v2.7.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/security.git",
-                "reference": "d41391616712f23df16277d674280cea6cb5f139"
+                "reference": "5b789c31e791c6e499644f203b51e8302e467039"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/security/zipball/d41391616712f23df16277d674280cea6cb5f139",
-                "reference": "d41391616712f23df16277d674280cea6cb5f139",
+                "url": "https://api.github.com/repos/symfony/security/zipball/5b789c31e791c6e499644f203b51e8302e467039",
+                "reference": "5b789c31e791c6e499644f203b51e8302e467039",
                 "shasum": ""
             },
             "require": {
@@ -1420,7 +1420,7 @@
             ],
             "description": "Symfony Security Component",
             "homepage": "https://symfony.com",
-            "time": "2016-03-25 15:52:47"
+            "time": "2016-04-09 10:56:56"
         },
         {
             "name": "symfony/serializer",

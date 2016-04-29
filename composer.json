@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "CultuurNet\\SilexServiceProviderJWT\\": "src/"
+            "CultuurNet\\SilexServiceProviderJwt\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "CultuurNet\\SilexServiceProviderJWT\\": "tests/"
+            "CultuurNet\\SilexServiceProviderJwt\\": "tests/"
         }
     },
     "minimum-stability": "dev",
