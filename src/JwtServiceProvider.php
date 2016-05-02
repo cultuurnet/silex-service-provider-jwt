@@ -73,9 +73,10 @@ class JwtServiceProvider implements ServiceProviderInterface
 
                 // define the authentication provider object
                 $app['security.authentication_provider.' . $name . '.jwt'] = $app->share(
-                    function () use ($app, $name) {
+                    function () use ($app, $name, $options) {
                         return new JwtAuthenticationProvider(
-                            $app['security.token_decoder.' . $name . '.jwt']
+                            $app['security.token_decoder.' . $name . '.jwt'],
+                            $options['required_claims']
                         );
                     }
                 );
