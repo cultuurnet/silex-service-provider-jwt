@@ -61,22 +61,22 @@ class JwtServiceProvider implements ServiceProviderInterface
                 );
 
                 $app['security.token_decoder.' . $name . '.jwt'] = $app->share(
-                    function (Application $app) use ($name) {
+                    function (Application $app) use ($name, $options) {
                         return new JwtDecoderService(
                             new Parser(),
                             $app['security.validation_data.' . $name . '.jwt'],
                             new Sha256(),
-                            $app['security.public_key.' . $name . '.jwt']
+                            $app['security.public_key.' . $name . '.jwt'],
+                            $options['required_claims']
                         );
                     }
                 );
 
                 // define the authentication provider object
                 $app['security.authentication_provider.' . $name . '.jwt'] = $app->share(
-                    function () use ($app, $name, $options) {
+                    function () use ($app, $name) {
                         return new JwtAuthenticationProvider(
-                            $app['security.token_decoder.' . $name . '.jwt'],
-                            $options['required_claims']
+                            $app['security.token_decoder.' . $name . '.jwt']
                         );
                     }
                 );
